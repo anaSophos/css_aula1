@@ -4,20 +4,32 @@
     <meta charset="UTF-8">
     <title>Portfolio</title>
     <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        }
         body{
             background-color: black;
-            font-size: 80px;
-            margin: 5px;
         }
         main{
+            display: block;
+            flex-direction: column;
+
+            float: left;
+            width: 50%;
+            border: 15px;
+            padding: 50px;
+            margin: 20px;
+        }
+        .titulo{
             color: rgb(255, 255, 255);
             font-size: 40px;
             text-align: center;
             font-family: Arial, Helvetica, sans-serif;
             padding: 20px;
-            margin: 0px 20px;
+            margin: 0px 20px
         }
-        section{
+        .subtitulo{
             color: #9BBDF9;
             font-size: 20px;
             text-align: center;
@@ -25,7 +37,7 @@
             padding: 20px;
             margin: 0px 20px;
         }
-        p{
+        .texto{
             color: #ffffff;
             font-size: 20px;
             text-align: justify;
@@ -33,31 +45,62 @@
             padding: 20px;
             margin: 0px 20px;
         }
-        .instagram{background-color: #78a6f7;}
-        .git{background-color: #78a6f7;}
-        div{
-            font-size: 20px;
+        section{
+            width: 100%;
+            flex-wrap: wrap;
+            flex-direction: row;
+            box-sizing: border-box;
+        }
+        .instagram{
+            background-color: #78a6f7;
+            font-size: 16px;
+            text-align: center;
             float: left;
-            padding: 10px;
-            margin: 0px 100px;
+            padding: 20px;
+            margin: 0px 70px;
+            padding: 15px 24px;
+            font-weight: 700;
+            border-radius: 20px;
+        }
+        .git{
+            background-color: #78a6f7;
+            font-size: 16px;
+            text-align: center;
+            float: right;
+            padding: 20px;
+            margin: 0px 70px;
+            padding: 15px 24px;
+            font-weight: 700;
+            border-radius: 20px;
+        }
+        img{
+            float: right;
+            width: 426px;
+            border: transparent thin solid;
+            padding: 20px;
+            margin: 150px 100px;
+            max-width: 500%;
         }
     </style>
 </head>
 <body>
-    <main>Eleve seu negócio digital a outro nível com um Front-end de qualidade</main>
-    <section>Faz o Back-end que eu cuido do Front-end ;)</section>
-    <p>Oie! Sou a Ana Paula Costa, estou aprendendo Front-end e brevemente estarei tão "fera" que estarei ajudando pequenos negócios a tornar realidade bas ideias. Acompanhe meu desenvolvimento e se quiser já encomenda um trabalhinho.</p>
-    <div class="instagram">
-        <a href="">INSTAGRAM</a>
-    </div>
-    <div class="git">
-        <a href="https://github.com/anaSophos">GIT HUB</a>
-    </div>
+    <main>
+        <div class="titulo">Eleve seu negócio digital a outro nível com um Front-end de qualidade</div>
+        <div class="subtitulo">Faz o Back-end que eu cuido do Front-end ;)</div>
+        <div class="texto">
+            <p>Oie! Sou a Ana Paula Costa, estou aprendendo Front-end e brevemente estarei tão "fera" que estarei ajudando pequenos negócios a tornar realidade bas ideias. Acompanhe meu desenvolvimento e se quiser já encomenda um trabalhinho.</p>
+        </div>
 
-    <p>
-        <figure>
-            <img src="images.jfif">
-        </figure>
-    </p>
+        <section class="botao">
+            <div class="instagram">
+                <a href="">INSTAGRAM</a>
+            </div>
+            <div class="git">
+                <a href="https://github.com/anaSophos">GIT HUB</a>
+            </div>
+        </section>
+    </main>
+
+    <img src="images.jfif"> 
 </body>
 </html>
